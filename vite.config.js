@@ -4,9 +4,9 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/ApiSimpsons_2025IIg1_Almario_Kevin_and_Lopez_Mauricio/',
+  base: '/ApiSimpsons_2025IIg1_Almario_Kevin/',
   server: {
-    host: true, 
-    port: 5173 
+    host: true,
+    port: 5173
   }
 })
