@@ -17,6 +17,9 @@ const Header = () => {
     return (
         <>
             <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
+                <button className="menu-close-btn" onClick={closeMenu}>
+                    <CloseIcon sx={{ fontSize: 40, color: '#000' }} />
+                </button>
                 <Link to="/episodes" onClick={closeMenu}>
                     <img src={ImgEpisodes} alt="Episodios" className="nav-icon" />
                 </Link>
@@ -28,6 +31,7 @@ const Header = () => {
                 </Link>
             </div>
 
+
             <header>
                 <section className="section1">
                     <Link to="/" className="logo-link" onClick={closeMenu}>
@@ -38,19 +42,19 @@ const Header = () => {
                 <section className="nav-section">
                     <nav>
                         <Link to="/episodes">
-                    <img src={ImgEpisodes} alt="Episodios" className="nav-icon" />
-                </Link>
-                <Link to="/location">
-                    <img src={ImgLocations} alt="Ubicaciones" className="nav-icon" />
-                </Link>
-                <Link to="/characters" >
-                    <img src={ImgCharacters} alt="Personajes" className="nav-icon" />
-                </Link>
+                            <img src={ImgEpisodes} alt="Episodios" className="nav-icon" />
+                        </Link>
+                        <Link to="/location">
+                            <img src={ImgLocations} alt="Ubicaciones" className="nav-icon" />
+                        </Link>
+                        <Link to="/characters" >
+                            <img src={ImgCharacters} alt="Personajes" className="nav-icon" />
+                        </Link>
                     </nav>
                 </section>
 
                 <section className="section2">
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/almariok27/ApiSimpsons_2025IIg1_Almario_Kevin" target="_blank" rel="noopener noreferrer">
                         <GitHubIcon sx={{ fontSize: 60, color: '#000' }} />
                     </a>
 
